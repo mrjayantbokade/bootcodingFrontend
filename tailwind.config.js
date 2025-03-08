@@ -86,7 +86,8 @@ export default {
   			'marquee-vertical': 'marquee-vertical var(--duration) linear infinite',
   			rainbow: 'rainbow var(--speed, 2s) infinite linear',
   			pulse: 'pulse var(--duration) ease-out infinite',
-  			gradient: 'gradient 8s linear infinite'
+  			gradient: 'gradient 8s linear infinite',
+  			ripple: 'ripple var(--duration,2s) ease calc(var(--i, 0)*.2s) infinite'
   		},
   		keyframes: {
   			grid: {
@@ -141,6 +142,14 @@ export default {
   			gradient: {
   				to: {
   					backgroundPosition: 'var(--bg-size, 300%) 0'
+  				}
+  			},
+  			ripple: {
+  				'0%, 100%': {
+  					transform: 'translate(-50%, -50%) scale(1)'
+  				},
+  				'50%': {
+  					transform: 'translate(-50%, -50%) scale(0.9)'
   				}
   			}
   		}

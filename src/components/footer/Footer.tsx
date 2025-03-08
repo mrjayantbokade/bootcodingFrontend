@@ -5,7 +5,7 @@ const Footer2 = () => {
     return (
         <>
             <div
-                className={`bg-black w-[90%] md:w-[84%] text-black/90  h-auto mt-32 mx-auto rounded-3xl`}>
+                className={`bg-black w-[90%] md:w-[84%] max-w-7xl text-black/90  h-auto mt-32 mx-auto rounded-3xl`}>
                 <div
                     className={`bg-white text-black/90 shadow-xl w-full h-full rounded-3xl`}>
                     <div className={`px-8 md:px-24 py-16`}>
