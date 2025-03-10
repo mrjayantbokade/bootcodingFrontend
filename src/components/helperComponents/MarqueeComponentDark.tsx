@@ -54,7 +54,7 @@ const reviews = [
 
 
 const firstRow = reviews.slice(0, reviews.length / 2);
-const secondRow = reviews.slice(reviews.length / 2);
+// const secondRow = reviews.slice(reviews.length / 2);
 
 const ReviewCard = ({
                         img,
@@ -80,6 +80,7 @@ const ReviewCard = ({
                 width="90" height="90" alt="" src={img} style={{
                 filter: "brightness(0) invert(1)",
             }}/>
+            <p className={`hidden`}>{username}</p>
 
             <img
                 className={`hidden lg:block`}
@@ -88,16 +89,7 @@ const ReviewCard = ({
             }}/>
 
 
-            {/*<img*/}
-            {/*    className={`hidden lg:block`}*/}
-            {/*    width="120"*/}
-            {/*    height="120"*/}
-            {/*    alt=""*/}
-            {/*    src={img}*/}
-            {/*    style={{*/}
-            {/*        filter: "brightness(0.8) invert(1) grayscale(100%)",*/}
-            {/*    }}*/}
-            {/*/>*/}
+
 
         </figure>
     );

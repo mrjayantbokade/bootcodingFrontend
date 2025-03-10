@@ -1,7 +1,5 @@
 import {
   GraduationCap,
-  Briefcase,
-  Megaphone,
   Building,
   BookOpen,
   ShieldCheck,

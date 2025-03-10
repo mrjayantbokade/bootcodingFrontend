@@ -4,7 +4,6 @@
 import {MarqueeDemo} from "@/components/helperComponents/MarqueeComponentDark.tsx";
 
 import g2logo from "/img/g2/G2_Logo_Red_RGB.svg"
-// import heroImg from "/backgrounds/heroBackground.avif"
 import bottomImg from "/backgrounds/bottomBackground.avif"
 
 import {Link} from "react-router-dom";
@@ -286,11 +285,11 @@ const HomePage: React.FC = () => {
             {/*try now section*/}
 
 
-            <div className="app_home_page   mx-auto">
+            <div className="app_home_page  pt-32  mx-auto">
 
 
                 {/*mobile*/}
-                <div className=" md:hidden  rotate-0  z-[-1] w-full h-[500px]">
+                <div className=" md:hidden   rotate-0  z-[-1] w-full h-[500px]">
                     <div
                         className={cn(
                             "absolute inset-0 bg-center bg-cover md:bg-contain ",
@@ -328,7 +327,6 @@ const HomePage: React.FC = () => {
                                 </p>
 
 
-
                                 <div
                                     className={`flex flex-row pt-5 justify-center md:justify-start gap-10 mt-5 z-[999] w-full`}>
                                     <Link to={`products`}
@@ -348,13 +346,17 @@ const HomePage: React.FC = () => {
 
                 </div>
 
-                <div className=" hidden md:block  rotate-0  z-[-1] w-full h-[500px]">
+
+                {/*larger screen*/}
+                <div
+                    style={{backgroundImage: `url(${bottomImg})`}}
+                    className=" hidden md:block  rotate-0  z-[-1] w-full h-[500px] bg-contain">
                     <div
                         className={cn(
-                            "absolute inset-0 bg-center bg-cover md:bg-contain ",
+                            "absolute inset-0 bg-center  md:bg-contain ",
                             "[mask-image:linear-gradient(to_bottom_top,white,transparent,transparent)]"
                         )}
-                        style={{backgroundImage: `url(${bottomImg})`}}
+
                     >
 
 
@@ -384,7 +386,6 @@ const HomePage: React.FC = () => {
                                             <p className=" text-center text-sm lg:text-lg  md:text-left font-normal font-inter tracking-wide text-gray-300/90  my-4">
                                                 Join thousands Businesses accelerating their workflow and Learning
                                             </p>
-
 
 
                                             <div
